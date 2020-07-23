@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      
+        <meta charset="UTF-8">
+        <title>Form</title>  
+        <link rel="stylesheet" type="text/css" href="style.css/Form.css">
+    </head>
+    <body>
+        <div id="wrapper">
+             <h1>Please fill your details:</h1>
+             <form method="post" action="#">
+                 <fieldset>
+                 <div class="input-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Type in capital">
+                 </div>
+                 
+                 <div class="input-row">
+                    <label for="email">Email:</label>
+                     <input type="text" id="email" name="email" value="">
+                 </div>
+                 <div class="input-row">
+                      <label for="city">City:</label>
+                      <select id="city" name="city">
+                          <option value=""></option>
+                          <optgroup label="Karnataka">
+                          <option value="Mandya">Mandya</option>
+                          <option value="Bangalore" selected="selected">Bangalore</option>
+                          <option value="Mysore">Mysore</option>
+                          </optgroup>
+                      </select>
+                   </div>
+                 <div class="input-row">
+                     <label for="language">Language</label>
+                     <select id="language" name="language" multiple="multiple">
+                        <option value=""></option>
+                        <option value="kan">Kannada</option>
+                        <option value="en">English</option>
+                        <option value="hin">Hindi</option>
+                     </select>
+                 </div>
+                 </fieldset>
+                 <fieldset id="choices">
+                 <div class="input-row">
+                     <label class="block">Your highest eduction:</label>
+                     <input type="radio" id="undergraduate" name="education" value="Undergraduate">
+                     <label for="undergraduate">Undergraduate</label>
+                     <input type="radio" id="graduate" name="education" value="Graduate" checked="checked">
+                     <label for="graduate">Graduate</label>
+                     <input type="radio" id="postgraduate" name="education" value="Postgraduate">
+                     <label for="postgraduate">Postgraduate</label>
+                  </div>
+                 <div class="input-row">
+                     <label class="block">Technical Skills:</label>
+                     <input type="checkbox" id="html" name="tech_skills" value="HTML" checked="checked">
+                     <label for="html">HTML</label>
+                       <input type="checkbox" id="css" name="tech_skills" value="CSS" checked="checked">
+                     <label for="css">CSS</label>
+                       <input type="checkbox" id="php" name="tech_skills" value="PHP">
+                     <label for="php">PHP</label>
+                       <input type="checkbox" id="javascript" name="tech_skills" value="Javascript">
+                     <label for="javascript">Javascript</label>
+                 </div>
+                 </fieldset>
+                 <div class="input-row buttons">
+                     <input type="Submit" value="Submit Form">
+                     <button>Some button</button>
+                      <input type="Reset" value="Reset Form">
+                      
+                      
+                      
+                      </div>
+            </form>
+        </div>
+    </body>
+</html>
